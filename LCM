@@ -1,0 +1,16 @@
+function LCM ($a,$b) {  
+  
+  if($a>$b) $minLimit =  $a;
+  else $minLimit = $b;
+  
+  for($i=$minLimit; true; $i++) {
+    if(($i%$a==0) && ($i%$b==0)) {return $i;}
+  }
+}
+
+echo 'LCM ='.   LCM(81, 18);
+
+/**
+Output : LCM = 162
+**/
+  
