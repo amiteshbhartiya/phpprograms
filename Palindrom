@@ -1,0 +1,13 @@
+function palindrom($input) {
+  $input =  (string)$input;
+  if(strrev($input) == $input) return "Yes";
+  else return "No";
+}
+
+echo palindrom(1001);
+echo palindrom('WOW');
+
+/**
+Output :
+Yes
+**/
